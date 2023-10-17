@@ -1,0 +1,40 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 39px;
+}
+* {
+  font-family: "Chewy", cursive;
+  background-color: rgb(255, 255, 255);
+}
+
+button {
+  background-color: palevioletred;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 3px;
+  font-size: 22px;
+}
+
+button:hover {
+  background-color: pink;
+  color: black;
+}
+
+.toast {
+  background-color: pink;
+  color: black;
+  padding: 5px;
+  border-radius: 25px;
+  width: 50%;
+}
+
+.current-feeling-flex {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: lightseagreen;
+}
