@@ -2,6 +2,7 @@
   font-family: sans-serif;
   text-align: center;
   margin: 39px;
+  padding: 50px;
 }
 * {
   font-family: "Chewy", cursive;
@@ -27,7 +28,7 @@ button:hover {
   color: black;
   padding: 5px;
   border-radius: 25px;
-  width: 50%;
+  width: 20%;
 }
 
 .current-feeling-flex {

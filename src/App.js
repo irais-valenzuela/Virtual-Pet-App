@@ -6,7 +6,7 @@ import Buttons from "./Buttons";
 
 export default function App() {
   const [feeling, setFeeling] = useState(
-    window.localStorage.getItem("feeling") || "fine-dog.png"
+    window.localStorage.getItem("feeling") || "fine-dog.png",
   );
   const [careType, setCareType] = useState("");
 
@@ -26,17 +26,14 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Help yuri feel better by taking care of her!</h1>
+      <h1>Help Yuri feel better by taking care of her!</h1>
       <p>Engage and care for Yuri to see how she reacts.</p>
       <div className="current-feeling-flex">
         <h3 className="toast">{`Yuri currently feels ${findEmotion(
-          feeling
+          feeling,
         )}`}</h3>
       </div>
-      <img
-        alt={`Picture of a dog feeling ${feeling}`}
-        src={`/images/${feeling}`}
-      />
+      <img alt={`Dog feeling ${feeling}`} src={`/images/${feeling}`} />
       <Gifs careType={careType} />
       <br />
       <Buttons setCareType={setCareType} setFeeling={setFeeling} />

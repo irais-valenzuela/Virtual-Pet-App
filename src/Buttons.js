@@ -12,7 +12,14 @@ const Buttons = ({ setCareType, setFeeling }) => {
   };
 
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: "5px",
+      }}
+    >
       <button className="button" onClick={() => handleClick("cuddles")}>
         Cuddles
       </button>
