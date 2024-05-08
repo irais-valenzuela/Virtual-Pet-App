@@ -11,14 +11,14 @@ export default function App() {
   const [careType, setCareType] = useState("");
 
   const thirtyMinutes = 30 * 60 * 1000;
-  setTimeout(() => {
+  setInterval(() => {
     window.localStorage.setItem("feeling", "sad-dog.png");
     setFeeling("sad-dog.png");
     setCareType("");
   }, thirtyMinutes);
 
   const oneHour = 60 * 60 * 1000;
-  setTimeout(function () {
+  setInterval(function () {
     window.localStorage.setItem("feeling", "distressed-dog.png");
     setFeeling("distressed-dog.png");
     setCareType("");
